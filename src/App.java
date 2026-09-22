@@ -8,7 +8,8 @@ public class App {
         System.out.println("Caso de estudio: Distribuir los tiempos de luz verde en los semáforos");
 
         Scanner entrada = new Scanner(System.in);
-
+        HillClimbing hc = new HillClimbing();
+        SimulatedAnnealing sa = new SimulatedAnnealing();
         int opcion;
 
         do {
@@ -27,16 +28,13 @@ public class App {
                 case 1:
                     Parametros.cargarParametros();
                     break;
-
-                /*
-                 * case 2:
-                 * HillClimbing.ejecutarHillClimbing();
-                 * break;
-                 * 
-                 * case 3:
-                 * SimulatedAnnealing.ejecutarSimulatedAnnealing();
-                 * break;
-                 * 
+                case 2:
+                    hc.ejecutar();
+                    break;
+                case 3:
+                    sa.ejecutar();
+                    break;
+                 /* 
                  * case 4:
                  * CompararResultados.compararResultados();
                  * break;
