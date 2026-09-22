@@ -36,15 +36,15 @@ public class App {
                  * case 3:
                  * SimulatedAnnealing.ejecutarSimulatedAnnealing();
                  * break;
-                 * 
-                 * case 4:
-                 * CompararResultados.compararResultados();
-                 * break;
-                 * 
-                 * case 5:
-                 * System.out.println("\nSaliendo del programa...");
-                 * break;
                  */
+
+                case 4:
+                    CompararResultados.compararResultados();
+                    break;
+
+                case 5:
+                    System.out.println("\nSaliendo del programa...");
+                    break;
 
                 default:
                     System.out.println("\nOpción inválida. Intente de nuevo.");
