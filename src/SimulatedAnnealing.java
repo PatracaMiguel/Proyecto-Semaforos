@@ -66,6 +66,8 @@ public class SimulatedAnnealing {
                 this.mejorSolucion[1]);
         System.out.printf("Costo final obtenido: %.2f%n", this.costoFinal);
         System.out.println("Iteraciones realizadas: " + this.iteraciones + "\n");
+        ResultadosIO.guardar("resultados/simulated_annealing.txt",
+                this.costoFinal, this.iteraciones, this.mejorSolucion);
     }
 
     private int[] generarVecino(int[] estado) {
@@ -82,7 +84,7 @@ public class SimulatedAnnealing {
 
         return vecino;
     }
-    
+
     public double calcularCosto(int[] tiempos) {
         int vNS = tiempos[0];
         int vEO = tiempos[1];

@@ -49,6 +49,9 @@ public class HillClimbing {
                 this.mejorSolucion[1]);
         System.out.printf("Costo final obtenido: %.2f\n", this.costoFinal);
         System.out.println("Iteraciones realizadas: " + this.iteraciones + "\n");
+
+        ResultadosIO.guardar("resultados/hill_climbing.txt",
+                this.costoFinal, this.iteraciones, this.mejorSolucion);
     }
 
     private int[] generarVecino(int[] estado) {
